@@ -1,0 +1,69 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #e6f0ff; /* Azul claro de fondo */
+}
+
+header {
+    background-color: #1e3a8a; /* Azul oscuro para el encabezado */
+    color: white;
+    padding: 20px;
+}
+
+nav button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #4f8ad8; /* Azul intermedio para botones en el nav */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+nav button:hover {
+    background-color: #3b6ab8; /* Azul más oscuro al pasar el mouse */
+}
+
+main {
+    padding: 20px;
+}
+
+input {
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #aad8ff; /* Azul muy claro para los bordes */
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #1e3a8a; /* Azul oscuro para botones */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #003366; /* Azul más oscuro para el hover */
+}
+
+blockquote {
+    font-style: italic;
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #2d4d7f; /* Azul grisáceo para el texto del blockquote */
+}
+
+#gallery img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}

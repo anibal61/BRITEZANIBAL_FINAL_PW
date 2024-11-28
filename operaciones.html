@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operaciones Matemáticas</title>
+    <link rel="stylesheet" href="operaciones-styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Operaciones Matemáticas</h1>
+        
+        <table class="operations-table">
+            <thead>
+                <tr>
+                    <th class="animated-header">OPERACIÓN</th>
+                    <th class="animated-header">DESCRIPCIÓN</th>
+                    <th class="animated-header">BOTONES</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>MULTIPLICACIÓN</td>
+                    <td>Multiplica 2 números ingresados</td>
+                    <td><button onclick="performOperation('multiply')">Calcular</button></td>
+                </tr>
+                <tr>
+                    <td>EXPONENTE 2</td>
+                    <td>Eleva al cuadrado 1 número ingresado</td>
+                    <td><button onclick="performOperation('square')">Calcular</button></td>
+                </tr>
+                <tr>
+                    <td>RESTA</td>
+                    <td>Resta 2 números ingresados</td>
+                    <td><button onclick="performOperation('subtract')">Calcular</button></td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <div id="result" class="result"></div>
+        
+        <div class="navigation">
+            <a href="main.html" class="nav-button">Inicio</a>
+
+        </div>
+    </div>
+    
+    <script src="operaciones-script.js"></script>
+</body>
+</html>

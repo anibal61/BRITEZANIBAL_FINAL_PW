@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API de Correo</title>
+    <link rel="stylesheet" href="styless.css">
+</head>
+<body>
+    <header>
+        <h1>API de Correo</h1>
+        <nav>
+            <button onclick="navigate('page1.html')">Volver al Inicio</button>
+        </nav>
+    </header>
+    <main>
+        <h2>Validar Dirección de Correo</h2>
+        <input type="email" id="email" placeholder="Introduce tu correo">
+        <button id="validateBtn">Validar Correo</button>
+        <p id="result"></p>
+    </main>
+    <script>
+        function navigate(page) {
+            window.location.href = page;
+        }
+
+        document.getElementById('validateBtn').addEventListener('click', () => {
+            const email = document.getElementById('email').value;
+            const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            const result = document.getElementById('result');
+
+            if (regex.test(email)) {
+                result.textContent = "El correo es válido.";
+                result.style.color = "green";
+            } else {
+                result.textContent = "El correo no es válido.";
+                result.style.color = "red";
+            }
+        });
+    </script>
+</body>
+</html>

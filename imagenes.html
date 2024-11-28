@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API de Imágenes</title>
+    <link rel="stylesheet" href="styless.css">
+</head>
+<body>
+    <header>
+        <h1>API de Imágenes</h1>
+        <nav>
+            <button onclick="navigate('page1.html')">Volver al Inicio</button>
+        </nav>
+    </header>
+    <main>
+        <h2>Imágenes Aleatorias</h2>
+        <button id="loadImagesBtn">Cargar Imágenes</button>
+        <div id="gallery"></div>
+    </main>
+    <script>
+        function navigate(page) {
+            window.location.href = page;
+        }
+
+        document.getElementById('loadImagesBtn').addEventListener('click', () => {
+            const gallery = document.getElementById('gallery');
+            gallery.innerHTML = '';
+
+            for (let i = 0; i < 5; i++) {
+                const img = document.createElement('img');
+                img.src = `https://picsum.photos/200/300?random=${Math.random()}`;
+                img.alt = 'Imagen Aleatoria';
+                img.style.margin = '10px';
+                img.style.borderRadius = '5px';
+                gallery.appendChild(img);
+            }
+        });
+    </script>
+</body>
+</html>

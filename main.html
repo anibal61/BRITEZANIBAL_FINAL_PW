@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+    <link rel="stylesheet" href="main-styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Bienvenido a nuestra plataforma</h1>
+            <div id="user-greeting"></div>
+        </header>
+        <main>
+            <section id="name-input" class="welcome-section">
+                <p>Por favor, ingresa tu nombre:</p>
+                <input type="text" id="user-name" placeholder="Tu nombre">
+                <button id="submit-name">Enviar</button>
+            </section>
+            <section id="main-content" class="hidden">
+                <div class="buttons-container">
+                    <button class="animated-button" data-page="page1">Página API</button>
+                    <button class="animated-button" data-page="page2">Página Formulario</button>
+                    <button class="animated-button" data-page="page3">Página de Operaciones</button>
+                
+                </div>
+                <div class="page-descriptions">
+                    <div class="description" data-page="page1">
+                        <h2>Página API</h2>
+                        <p>Esta página contiene API'S que interactuen con el Usuario.</p>
+                    </div>
+                    <div class="description" data-page="page2">
+                        <h2>Página Formulario</h2>
+                        <p>Aquí encontrarás un formulario para sacar el máximo provecho de nuestra plataforma.</p>
+                    </div>
+                    <div class="description" data-page="page3">
+                        <h2>Página de Operaciones</h2>
+                        <p>En esta sección podrás realizar operaciones complejas dentro de la plataforma.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="main-script.js"></script>
+</body>
+</html>
